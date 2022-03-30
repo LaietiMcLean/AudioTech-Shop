@@ -1,0 +1,27 @@
+/*Custom properties*/
+:root {
+    --primary: #3a0ca3;
+    --secondary: #adff02;
+    --grey: #495057;
+    --lightGrey: #adb5bd;
+    --white: #ffffff;
+    --black: #1f1e1e;
+
+    --primaryFont: 'Roboto', sans-serif;
+    --secondaryFont: 'Lato', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--primaryFont);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}

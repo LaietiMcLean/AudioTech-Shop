@@ -74,7 +74,7 @@ img {
 /****** Header ******/
 .header {
     background-color: var(--black);
-    padding: calc(var(--separation)*3) 0;
+    padding: calc(var(--separation)*2) 0;
     color: var(--white)
 }
 

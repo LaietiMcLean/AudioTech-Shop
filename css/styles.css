@@ -55,10 +55,73 @@ h3 {
 
 img {
     display: block;
+    height: auto;
     max-width: 100%;
 }
 
 /****** Useful classes ******/
 .text-center {
     text-align: center;
+}
+
+/****** Gradients ******/
+.green-gradient {
+    background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/****** Header ******/
+.header {
+    background-color: var(--black);
+    padding: calc(var(--separation)*3) 0;
+    color: var(--white)
+}
+
+@media (min-width: 768px) {
+       .container-header {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+       }
+}
+
+.text-header {
+    text-align: center;
+    padding-top: var(--separation);
+}
+
+@media (min-width: 768px) {
+    .text-header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }       
+}
+
+.text-header p {
+    margin: 0;
+}
+
+.tagline-product {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.product-name {
+    font-size: 6rem;
+}
+
+@media (min-width: 768px) {
+      .product-name {
+          font-size: 10rem;
+          margin: 0;
+          line-height: 1;
+      } 
+}
+
+.product-price span {
+    font-size: 6rem;
+    font-weight: 900;
 }

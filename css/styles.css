@@ -265,6 +265,13 @@ img {
     margin-bottom: 2rem;
     min-height: 20rem;
     padding-left: 4rem;
+    transition-property: transform background-size;
+    transition-duration: .3s;
+}
+
+.model:hover {
+    transform: scale(1.1);
+    background-size: 30rem;
 }
 
 @media (min-width: 992px) {

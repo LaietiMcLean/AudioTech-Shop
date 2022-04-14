@@ -166,7 +166,6 @@ img {
 }
 
 /****** About ******/
-
 .about-audiotech {
     background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
     background-position: right;
@@ -174,11 +173,35 @@ img {
     background-size: 100%, 100rem;
 }
 
+.avif .about-audiotech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.avif);
+}
+
+.webp .about-audiotech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.webp);
+}
+
+.notavif.notwebp .about-audiotech {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
+}
+
 @media (min-width: 768px) {
     .about-audiotech {
-        background-image: linear-gradient(to left, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
         background-repeat: repeat, no-repeat;
       } 
+
+      .notavif.notwebp .about-audiotech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
+      }
+
+      .webp .about-audiotech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.webp);
+      }
+
+      .avif .about-audiotech {
+        background-image: linear-gradient(to left, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.avif);
+      }
+
 }
 
 @media (min-width: 1600px) {
@@ -228,7 +251,6 @@ img {
 }
 
 /****** Models ******/
-
 .models {
     padding: var(--separation) 0;
 }
@@ -325,21 +347,42 @@ img {
 }
 
 /****** Newsletter ******/
-
 .newsletter {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%, 70rem;
 }
 
+.notavif.notwebp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+}
+
+.webp .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+}
+
+.avif .newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.avif);
+}
+
 @media (min-width: 768px) {
       .newsletter {
-        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
         background-position: center, -20rem 0rem;
         background-size: 100%, 100rem;
         padding: 10rem 0;
       } 
+
+      .notavif.notwebp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+      }
+
+      .webp .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.webp);
+      }
+
+      .avif .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.avif);
+      }
 }
 
 @media (min-width: 2200px) {
